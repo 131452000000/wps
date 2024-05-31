@@ -23,7 +23,7 @@ $done({body: JSON.stringify(body)});
 
 [rewrite_local]
 # 解锁WPS内购功能
-^https:\/\/tiance.wps.cn\/dce\/exec\/api\/market\/activity url script-response-body unlock_wps.js
+^https:\/\/tiance.wps.cn\/dce\/exec\/api\/market\/activity url script-response-body https://raw.githubusercontent.com/131452000000/wps/main/WPS.js
 
 [mitm]
 hostname = tiance.wps.cn
